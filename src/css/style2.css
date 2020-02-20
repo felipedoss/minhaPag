@@ -319,6 +319,11 @@ a.link:hover::after {
 	color: #AA88FF
 }
 
+.ou>a:hover{
+	color: #AA88FF
+}
+
+
 .header_menu li.active>a {
 	color: #AA88FF
 }
@@ -1072,6 +1077,7 @@ a.link:hover::after {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-flow: row wrap;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -1100,7 +1106,22 @@ a.link:hover::after {
 		margin: 0 auto -5rem auto
 	}
 }
+.break {
+	flex-basis: 100%;
+	height: 0;
+  }
 
+
+.icons_social svg {
+    width: 25px;
+	height: 25px;
+	fill: #8f8f8f;
+	padding-top: 5px;
+    transition: 0.5s ease all;
+}
+.icons_social svg:hover {
+	fill: #22EE00
+}
 .intro_dados ul {
 	max-width: 17.5rem;
 	text-align: right
@@ -1114,6 +1135,10 @@ a.link:hover::after {
 	}
 }
 
+
+.intro_dados .destaque{
+	color: #ffffff;
+}
 .intro_dados ul:last-of-type {
 	text-align: left
 }
